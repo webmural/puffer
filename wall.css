@@ -15,18 +15,21 @@ a {
 
 sup,
 sub {
-  font-size: 3em;
+  float: left;
+  font-size: 2em;
+  writing-mode: vertical-rl;
 }
 
 h1 {
-  font-size: inherit;
-  margin-block: 1rem;
+  display: flow-root;
+  flex-basis: 50%;
+  overflow-wrap: anywhere;
 }
 
 body {
   margin: auto;
   margin-inline-start: 1rem;
-  padding: 1vh;
+  padding: 2vmax;
   padding-inline-start: 2vw;
   text-shadow: 5px -3px 0;
 }
@@ -37,7 +40,7 @@ article {
   flex-wrap: wrap;
 }
 
-article > * {
+p {
   flex-basis: 50%;
 }
 
