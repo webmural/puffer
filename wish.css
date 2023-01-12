@@ -4,30 +4,23 @@
 }
 
 :root {
-  background: indigo;
+  background-color: indigo;
+  background-image: radial-gradient(indigo, darkslategray);
   color: lemonchiffon;
 }
 
-:link {
+:any-link {
   color: #09ff09;
 }
 
-:visited {
-  color: #fff909;
-}
-
 @media (prefers-contrast: less) {
-  :root {
-    color: peachpuff;
-  }
-
   :any-link {
-    color: gainsboro;
+    color: #fff909;
   }
 }
 
 @media (prefers-contrast: more) {
   :root {
-    background: midnightblue;
+    background-image: radial-gradient(midnightblue, indigo);
   }
 }
